@@ -1,4 +1,5 @@
-func brokenFirstItem(items: [String]) -> String {
+func brokenFirstItem(items: [String]) -> String
+{
     return items[0]
 }
 
@@ -11,8 +12,10 @@ fruits = []
 
 
 
-func firstItem(items: [String]) -> String? {
-    if items.isEmpty {
+func firstItem(items: [String]) -> String?
+{
+    if items.isEmpty
+    {
         return nil
     }
     return items[0]
@@ -30,16 +33,21 @@ if let fruit = firstItem(fruits) {
 fruits = []
 firstItem(fruits)
 
-if let fruit = firstItem(fruits) {
+if let fruit = firstItem(fruits)
+{
     print("The first fruit is \(fruit)")
-} else {
+}
+else
+{
     print("There are no fruits!")
 }
 
 
-func produceFullName(withFirstName firstName: String, middleName: String?, lastName: String) -> String {
+func produceFullName(withFirstName firstName: String, middleName: String?, lastName: String) -> String
+{
     var name = firstName
-    if let middleName = middleName {
+    if let middleName = middleName
+    {
         name = "\(name) \(middleName)"
     }
     name = "\(name) \(lastName)"
